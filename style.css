@@ -362,4 +362,9 @@ nav ul {
         0 0 50px #adff2f;
     }
   }
+  @media (max-width: 768px) {
+    .jup-swap {
+      height: 750px !important;
+    }
+  }
   
