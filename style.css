@@ -135,13 +135,16 @@ nav ul li a:hover::after {
 
 /* ========== ELEMENT CARD ========== */
 .element-card {
+  position: relative;
   width: 260px;
   height: 260px;
   background: radial-gradient(circle at top left, #2a2a2a, #111111);
   border: 5px solid var(--radio-green);
   border-radius: 12px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin-bottom: 2rem;
   box-shadow: 0 0 30px var(--radio-green);
@@ -155,23 +158,26 @@ nav ul li a:hover::after {
   50% { transform: translateY(-8px); }
 }
 .element-number {
-  font-size: 1.5rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.6rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
-  align-self: start;
-  padding-top: 0.6rem;
 }
 .element-symbol {
   font-size: 6rem;
   font-weight: 700;
   color: var(--text-primary);
-  align-self: center;
   line-height: 1;
+  position: relative;
+  z-index: 1;
 }
 .element-weight {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.8rem;
   font-size: 1.3rem;
   color: var(--text-secondary);
-  align-self: end;
-  padding-bottom: 0.6rem;
 }
 
 /* ========== HEADINGS & BUTTON ========== */
