@@ -175,7 +175,8 @@ nav ul li a:hover::after {
 .element-weight {
   position: absolute;
   bottom: 0.6rem;
-  right: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 1.3rem;
   color: var(--text-secondary);
 }
